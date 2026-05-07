@@ -2,6 +2,7 @@
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
+    background-color: lab(90.28% -6.99 3.63);
 }
 
 /* Hero principal */
@@ -18,7 +19,7 @@ body {
 
 /* Navbar */
 .navbar {
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #d0ecd2;
 }
 
 /* Links da navbar */
@@ -27,7 +28,7 @@ body {
 }
 
 .navbar-item:hover {
-    background-color: #00b89c;
+    background-color: #000000;
     color: white !important;
 }
 
@@ -80,4 +81,7 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 15px;
+}
+.carousel .carousel-item {
+    padding: 10px;
 }
