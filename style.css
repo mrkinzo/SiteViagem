@@ -1,0 +1,83 @@
+/* Fundo geral */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero principal */
+.hero {
+    background: linear-gradient(90deg, #00b89c, #008f76);
+}
+
+/* Título principal */
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Links da navbar */
+.navbar-item {
+    transition: 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #00b89c;
+    color: white !important;
+}
+
+/* Texto introdutório */
+.Intro p {
+    margin-top: 30px;
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* Card */
+.card {
+    margin-top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+/* Efeito ao passar mouse */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagem */
+.card-image img {
+    object-fit: cover;
+}
+
+/* Conteúdo do card */
+.card-content {
+    background-color: white;
+}
+
+/* Lista */
+.card-content ul {
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* Itens da lista */
+.card-content li {
+    margin-bottom: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    /* Ajuste conforme necessário */
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}

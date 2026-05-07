@@ -1,53 +1,138 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pato Branco!</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-<body>
-    <header>
-        <section class="hero is-primary">
-            <div class="hero-body">
-                <p class="title">Conheça Pato Branco</p>
-            </div>
-        </section>
+        <!-- Bulma Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css">
 
-        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    <strong>Links externos:</strong>
+        <!-- Bulma Carousel JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <section class="hero is-primary">
+                <div class="hero-body">
+                    <p class="title">Conheça Pato Branco</p>
                 </div>
-                <a class="navbar-item" href="https://youtube.com/shorts/6AxRzWFce4c?si=Gtxc6B9sfeAWiY25" target="_blank">História</a>
-                <a class="navbar-item" href="https://youtube.com/shorts/46BU2D_H434?si=jDM79smws3AfgHvS" target="_blank">Personagens</a>
-                <a class="navbar-item" href="https://youtu.be/yF2xy40R5o8?si=wqrtOmXLdqof6zMc" target="_blank">Lugares</a>
-            </div>
-        </nav>
-    </header>
+            </section>
 
-    <main class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-one-third"> <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="BozenaFlag.png" alt="bandeira de Pato Branco">
-                            </figure>
+            <nav class="navbar is-light" role="navigation"
+                aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="navbar-item">
+                        <strong>Links externos:</strong>
+                    </div>
+                    <a class="navbar-item"
+                        href="https://youtube.com/shorts/6AxRzWFce4c?si=Gtxc6B9sfeAWiY25"
+                        target="_blank">História</a>
+                    <a class="navbar-item"
+                        href="https://youtube.com/shorts/46BU2D_H434?si=jDM79smws3AfgHvS"
+                        target="_blank">link nada suspeitox</a>
+                    <a class="navbar-item"
+                        href="https://youtu.be/zL19uMsnpSU?si=hVIie2GfKbZJxM64"
+                        target="_blank">agendar estadia</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="section">
+            <div class="Intro">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-two-thirds">
+                            <p class="is-size-5 has-text-justified">Pato Branco
+                                é conhecida nacionalmente como a Capital
+                                Tecnológica do Sudoeste do Paraná e um
+                                importante polo de inovação, tecnologia e
+                                agronegócio. Destaca-se pela alta qualidade de
+                                vida, sendo eleita uma das cidades mais
+                                inteligentes e desenvolvidas do Brasil, com
+                                destaque para educação, infraestrutura e
+                                tecnologia.</p>
                         </div>
-                        <div class="card-content">
-                            <div class="content has-text-centered">
-                                <p>Eis a bandeira de Pato Branco.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-one-third"> <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="BozenaFlag.png"
+                                        alt="bandeira de Pato Branco">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content has-text-centered">
+                                    <p>fatos sobre Pato Branco</p>
+                                    <ul>
+                                        <li>Fundação: 14 de dezembro de
+                                            1953</li>
+
+                                        <li>População: Aproximadamente 97.821
+                                            habitantes</li>
+
+                                        <li>Área: Cerca de 539 km²</li>
+
+                                        <li>Economia: Baseada na indústria,
+                                            comércio e agricultura</li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <section class="section">
+                <div class="container">
+
+                    <h2 class="title has-text-centered">
+                        Lugares de Pato Branco
+                    </h2>
+
+                    <div class="carousel">
+
+                        <div class="item-1">
+                            <img src="ingreja.jpg" alt="Imagem 1">
+                        </div>
+
+                        <div class="item-2">
+                            <img src="lago.jpg" alt="Imagem 2">
+                        </div>
+
+                        <div class="item-3">
+                            <img src="frei.jpg" alt="Imagem 3">
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </main>
-
-</body>
+            </section>
+        </main>
+        <script>
+document.addEventListener('DOMContentLoaded', () => {
+    bulmaCarousel.attach('.carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+    });
+});
+</script>
+    </body>
 </html>
