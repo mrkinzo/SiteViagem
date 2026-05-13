@@ -8,7 +8,6 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-        <!-- Bulma Carousel CSS -->
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css">
 
@@ -32,23 +31,50 @@
                 aria-label="main navigation">
                 <div class="navbar-brand">
                     <div class="navbar-item">
-                        <strong>Links externos:</strong>
+                        <strong>Links:</strong>
                     </div>
-                    <a class="navbar-item"
-                        href="https://youtube.com/shorts/6AxRzWFce4c?si=Gtxc6B9sfeAWiY25"
-                        target="_blank">História</a>
-                    <a class="navbar-item"
-                        href="https://youtube.com/shorts/46BU2D_H434?si=jDM79smws3AfgHvS"
-                        target="_blank">link nada suspeito</a>
-                    <a class="navbar-item"
-                        href="https://youtu.be/zL19uMsnpSU?si=hVIie2GfKbZJxM64"
-                        target="_blank">agendar estadia</a>
+
+                    <!-- Botão hambúrguer para mobile -->
+                    <a role="button" class="navbar-burger" aria-label="menu"
+                        aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <!-- Menu que colapsa no mobile -->
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <!-- Links internos (âncoras) -->
+                        <a class="navbar-item" href="#intro">Sobre</a>
+                        <a class="navbar-item" href="#lugares">Lugares</a>
+                        <a class="navbar-item" href="#descricoes">Pontos Turísticos</a>
+                    </div>
+                    <div class="navbar-end">
+                        <!-- Links externos -->
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">Links externos</a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item"
+                                    href="https://youtube.com/shorts/6AxRzWFce4c?si=Gtxc6B9sfeAWiY25"
+                                    target="_blank">História</a>
+                                <a class="navbar-item"
+                                    href="https://youtube.com/shorts/46BU2D_H434?si=jDM79smws3AfgHvS"
+                                    target="_blank">link nada suspeito</a>
+                                <a class="navbar-item"
+                                    href="https://youtu.be/zL19uMsnpSU?si=hVIie2GfKbZJxM64"
+                                    target="_blank">agendar estadia</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
 
         <main class="section">
-            <div class="Intro">
+            <!-- Âncora: Sobre -->
+            <div id="intro" class="Intro">
                 <div class="container">
                     <div class="columns is-centered">
                         <div class="column is-two-thirds">
@@ -68,7 +94,8 @@
             <hr>
             <div class="container">
                 <div class="columns is-centered">
-                    <div class="column is-one-third"> <div class="card">
+                    <div class="column is-one-third">
+                        <div class="card">
                             <div class="card-image">
                                 <figure class="image is-4by3">
                                     <img src="BozenaFlag.png"
@@ -81,24 +108,21 @@
                                     <ul>
                                         <li>Fundação: 14 de dezembro de
                                             1953</li>
-
                                         <li>População: Aproximadamente 97.821
                                             habitantes</li>
-
                                         <li>Área: Cerca de 539 km²</li>
-
                                         <li>Economia: Baseada na indústria,
                                             comércio e agricultura</li>
-
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <section class="section">
+
+            <!-- Âncora: Lugares (carrossel) -->
+            <section id="lugares" class="section">
                 <div class="container">
                     <hr>
                     <h2 class="title has-text-centered">
@@ -106,25 +130,22 @@
                     </h2>
 
                     <div class="carousel">
-
-                        <div class="item-1">
+                        <div class="item-1 carousel-item">
                             <img src="ingreja.jpg" alt="Imagem 1">
                         </div>
-
-                        <div class="item-2">
+                        <div class="item-2 carousel-item">
                             <img src="lago.jpg" alt="Imagem 2">
                         </div>
-
-                        <div class="item-3">
+                        <div class="item-3 carousel-item">
                             <img src="frei.jpg" alt="Imagem 3">
                         </div>
-
                     </div>
 
                 </div>
             </section>
-            <h2>descrições dos pontos turisticos</h2>
-            <section class="section">
+
+            <!-- Âncora: Descrições -->
+            <section id="descricoes" class="section">
                 <div class="container">
 
                     <h2 class="title has-text-centered">
@@ -134,7 +155,7 @@
                     <div class="columns is-multiline">
 
                         <!-- Card 1 -->
-                        <div class="column is-one-third">
+                        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
                             <div class="card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
@@ -142,23 +163,17 @@
                                             alt="Parque do Lago">
                                     </figure>
                                 </div>
-
                                 <div class="card-content">
                                     <div class="content">
                                         <p class="title is-5">Parque do Lago</p>
-
                                         <p>
                                             O Parque do Lago é um dos principais
-                                            pontos
-                                            turísticos de Pato Branco,
-                                            oferecendo uma área
-                                            verde para lazer, caminhadas e
-                                            atividades ao ar
-                                            livre. O parque conta com um lago
-                                            artificial,
+                                            pontos turísticos de Pato Branco,
+                                            oferecendo uma área verde para lazer,
+                                            caminhadas e atividades ao ar livre.
+                                            O parque conta com um lago artificial,
                                             playgrounds, áreas para piquenique e
-                                            trilhas
-                                            para caminhada.
+                                            trilhas para caminhada.
                                         </p>
                                     </div>
                                 </div>
@@ -166,7 +181,7 @@
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="column is-one-third">
+                        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
                             <div class="card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
@@ -174,19 +189,14 @@
                                             alt="Gruta Frei Galvão">
                                     </figure>
                                 </div>
-
                                 <div class="card-content">
                                     <div class="content">
-                                        <p class="title is-5">Gruta Frei
-                                            Galvão</p>
-
+                                        <p class="title is-5">Gruta Frei Galvão</p>
                                         <p>
                                             Gruta em homenagem e devoção ao Frei
-                                            Galvão,
-                                            primeiro santo brasileiro, contando
-                                            também com
-                                            um santuário e missas celebradas na
-                                            gruta.
+                                            Galvão, primeiro santo brasileiro,
+                                            contando também com um santuário e
+                                            missas celebradas na gruta.
                                         </p>
                                     </div>
                                 </div>
@@ -194,7 +204,7 @@
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="column is-one-third">
+                        <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
                             <div class="card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
@@ -202,19 +212,16 @@
                                             alt="Paróquia São Pedro Apóstolo">
                                     </figure>
                                 </div>
-
                                 <div class="card-content">
                                     <div class="content">
                                         <p class="title is-5">
                                             Paróquia São Pedro Apóstolo
                                         </p>
-
                                         <p>
                                             Paróquia matriz de Pato Branco,
-                                            contando também
-                                            com a praça da matriz, sendo um
-                                            importante ponto
-                                            histórico e religioso da cidade.
+                                            contando também com a praça da matriz,
+                                            sendo um importante ponto histórico e
+                                            religioso da cidade.
                                         </p>
                                     </div>
                                 </div>
@@ -225,18 +232,36 @@
                 </div>
             </section>
         </main>
-        <script>
 
-document.addEventListener('DOMContentLoaded', () => {
-    bulmaCarousel.attach('.carousel', {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-    });
-});
-</script>
+        <script>
+            // Navbar hambúrguer
+            document.addEventListener('DOMContentLoaded', () => {
+                const burger = document.querySelector('.navbar-burger');
+                const menu = document.getElementById(burger.dataset.target);
+
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+
+                // Fecha o menu ao clicar em um link interno
+                document.querySelectorAll('#navbarMenu .navbar-item[href^="#"]').forEach(link => {
+                    link.addEventListener('click', () => {
+                        burger.classList.remove('is-active');
+                        menu.classList.remove('is-active');
+                    });
+                });
+
+                // Carrossel
+                bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    infinite: true,
+                });
+            });
+        </script>
 
     </body>
 </html>

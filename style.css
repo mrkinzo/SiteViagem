@@ -28,7 +28,13 @@ body {
 }
 
 .navbar-item:hover {
-    background-color: #000000;
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+/* Dropdown da navbar */
+.navbar-dropdown .navbar-item:hover {
+    background-color: #000000 !important;
     color: white !important;
 }
 
@@ -75,13 +81,30 @@ body {
     margin-bottom: 10px;
 }
 
+/* Carrossel */
 .carousel img {
     width: 100%;
-    /* Ajuste conforme necessário */
     height: auto;
     object-fit: cover;
     border-radius: 15px;
+    display: block;
 }
+
 .carousel .carousel-item {
     padding: 10px;
+}
+
+/* Corrige overflow no mobile */
+.carousel {
+    overflow: hidden;
+}
+
+/* Garante que o container do carrossel não quebre o layout */
+.carousel-container {
+    overflow: hidden;
+}
+
+/* Scroll suave para âncoras */
+html {
+    scroll-behavior: smooth;
 }
